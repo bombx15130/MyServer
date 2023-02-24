@@ -1,0 +1,18 @@
+{
+  "name": "MyServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bombx15130/MyServer.git",
+  "author": "bombs0817 <bombs0817@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

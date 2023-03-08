@@ -1,19 +1,16 @@
-const file = './mydb.db';
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database(file);
+const Sequelize = require('sequelize')
 
-module.exports = db
-// const Sequelize = require('sequelize');
-// const sequelize = new Sequelize({
-//   host: 'localhost',
-//   dialect: 'sqlite',
+const sequelize = new Sequelize({
+  host: 'localhost',
+  dialect: 'sqlite',
 
-//   pool: {
-//     max: 5,
-//     min: 0,
-//     acquire: 30000,
-//     idle: 10000
-//   },
-//   storage: './database.sqlite',
-//   operatorsAliases: false
-// });
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  },
+  storage: '../mydb.sqlite'
+});
+
+module.exports = { Sequelize, sequelize }
